@@ -24,9 +24,6 @@ import viteLogo from './assets/vite.svg'
              {student.name.charAt(0)}
            </div>
            <h2 className="mt-4 text-2xl font-bold">{student.name}</h2>
-           <p>{student.name.toUpperCase()}</p>
-           <p>{new Date().getFullYear()}</p>
-           <p>{40 + 2}</p>
            <p className="text-slate-400">{student.role}</p>
            <p className="mt-3 text-sm text-indigo-300">
              {student.skills.join(" - ")}
