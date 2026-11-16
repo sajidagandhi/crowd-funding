@@ -1,22 +1,15 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-
-   type Student = {
+type Student = {
      name: string
      role: string
      skills: string[]
    }
-
-   const student: Student = {
+const student: Student = {
      name: "Aisha Khan",
      role: "Frontend Student",
      skills: ["HTML", "CSS", "JavaScript"],
    }
    
-
-      function App() {
+function App() {
      return (
        <div className="min-h-screen bg-slate-900 p-8 text-slate-100">
          <div className="mx-auto max-w-sm rounded-2xl bg-slate-800 p-6 shadow-lg">
