@@ -9,26 +9,39 @@
      skills: ["HTML", "CSS", "JavaScript"],
    }
 
-   function App() {
-     return (
-       <div className="min-h-screen bg-slate-900 p-8 text-slate-100">
-         <Card>
-           <div className="flex items-center gap-4">
-             <Avatar name={student.name} />
-             <div>
-               <h2 className="text-2xl font-bold">{student.name}</h2>
-               <p className="text-slate-400">{student.role}</p>
-             </div>
-           </div>
-           <div className="mt-4 flex flex-wrap gap-2">
-             {student.skills.map((skill) => (
-               <Badge key={skill} text={skill} />
-             ))}
-           </div>
-         </Card>
-       </div>
-     )
-   }
+  
+import Avatar from './components/Avatar'
 
-   export default App
+type Student = {
+  name: string
+  role: string
+  skills: string[]
+}
+
+const student: Student = {
+  name: "Aisha Khan",
+  role: "Frontend Student",
+  skills: ["HTML", "CSS", "JavaScript"],
+}
+
+function App() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-slate-900 text-slate-100">
+      <div className="rounded-xl bg-slate-800 p-8">
+        <Avatar name={student.name} />
+
+        <h1 className="mt-4 text-3xl font-bold">
+          {student.name}
+        </h1>
+
+        <p>{student.role}</p>
+
+        <p>Skills: {student.skills.join(", ")}</p>
+      </div>
+    </div>
+  )
+}
+
+export default App
+
    
