@@ -1,15 +1,4 @@
-   import type { Student } from "./types"
-   import Card from "./components/Card"
-   import Badge from "./components/Badge"
-   import Avatar from "./components/Avatar"
 
-   const student: Student = {
-     name: "Aisha Khan",
-     role: "Frontend Student",
-     skills: ["HTML", "CSS", "JavaScript"],
-   }
-
-  
 import Avatar from './components/Avatar'
 
 type Student = {
@@ -43,5 +32,3 @@ function App() {
 }
 
 export default App
-
-   
