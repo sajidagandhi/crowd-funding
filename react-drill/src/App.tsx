@@ -8,6 +8,8 @@ import type { Student } from './types'
      { id: "s3", name: "Sara Ali", role: "JS Learner", skills: ["JavaScript", "DOM"] },
      { id: "s4", name: "Dev Patel", role: "Frontend Student", skills: ["CSS", "React basics"] },
      { id: "s5", name: "Meera Nair", role: "Designer + Coder", skills: ["Figma", "HTML"] },
+     {id: "s6",name: "Kabir Joshi",role: "Java Developer",skills: ["Java", "SQL"]},
+ 
    ]
    
 
