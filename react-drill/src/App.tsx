@@ -3,6 +3,7 @@ import Card from './components/Card'
 import type { Student } from './types'
 
 const student: Student = {
+  id: "1",
   name: "Aisha Khan",
   role: "Frontend Student",
   skills: ["HTML", "CSS", "JavaScript"],
