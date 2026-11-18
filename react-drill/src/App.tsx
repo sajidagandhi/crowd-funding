@@ -12,15 +12,14 @@ import type { Student } from './types'
  
    ]
    
-
 function App() {
   return (
-       <div className="mx-auto mt-8 grid max-w-3xl gap-4 sm:grid-cols-2">
-     {students.map((student) => (
-       <ProfileCard key={student.id} student={student} />
-     ))}
-   </div>
-   )
+    <div className="flex min-h-screen flex-wrap items-center justify-center gap-6 bg-slate-900 p-6">
+      {students.map((student) => (
+        <Card key={student.id} student={student} />
+      ))}
+    </div>
+  )
 }
 
 export default App
