@@ -1,4 +1,3 @@
-
 import Avatar from './Avatar'
 import Badge from './Badge'
 import type { Student } from '../types'
@@ -6,7 +5,6 @@ import type { Student } from '../types'
 function Card({ student }: { student: Student }) {
   return (
     <div className="w-full max-w-sm rounded-2xl bg-slate-800 p-8 text-slate-100 shadow-xl">
-
       <Avatar name={student.name} />
 
       <h2 className="mt-4 text-2xl font-bold">
@@ -22,7 +20,6 @@ function Card({ student }: { student: Student }) {
           <Badge key={skill} label={skill} />
         ))}
       </div>
-
     </div>
   )
 }
