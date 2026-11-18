@@ -1,5 +1,5 @@
 
-import Card from './components/Card'
+import ProfileCard from './components/ProfileCard'
 import type { Student } from './types'
 
    const students: Student[] = [
