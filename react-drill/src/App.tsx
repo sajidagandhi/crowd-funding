@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="flex min-h-screen flex-wrap items-center justify-center gap-6 bg-slate-900 p-6">
       {students.map((student) => (
-        <Card key={student.id} student={student} />
+        <Card student={student} />
       ))}
     </div>
   )
