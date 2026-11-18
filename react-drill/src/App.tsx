@@ -2,12 +2,14 @@
 import Card from './components/Card'
 import type { Student } from './types'
 
-const student: Student = {
-  id: "1",
-  name: "Aisha Khan",
-  role: "Frontend Student",
-  skills: ["HTML", "CSS", "JavaScript"],
-}
+   const students: Student[] = [
+     { id: "s1", name: "Aisha Khan", role: "Frontend Student", skills: ["HTML", "CSS", "JS"] },
+     { id: "s2", name: "Rohit Verma", role: "Frontend Student", skills: ["HTML", "Tailwind"] },
+     { id: "s3", name: "Sara Ali", role: "JS Learner", skills: ["JavaScript", "DOM"] },
+     { id: "s4", name: "Dev Patel", role: "Frontend Student", skills: ["CSS", "React basics"] },
+     { id: "s5", name: "Meera Nair", role: "Designer + Coder", skills: ["Figma", "HTML"] },
+   ]
+   
 
 function App() {
   return (
