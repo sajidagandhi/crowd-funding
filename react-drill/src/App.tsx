@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-100 p-6">
 
-      {/* Page Header */}
+      
       <div className="mx-auto mb-8 max-w-6xl">
         <h1 className="text-3xl font-bold text-slate-800">
           Student ID Gallery
@@ -56,7 +56,7 @@ function App() {
         </p>
       </div>
 
-      {/* Student Gallery */}
+      
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
         {students.map((student) => (
