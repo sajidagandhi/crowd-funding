@@ -15,7 +15,7 @@ export default function IdCard({
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md">
 
-      {/* Card Header */}
+     
       <div className="bg-indigo-600 p-4 text-center text-white">
         <h2 className="text-lg font-bold">
           Batch 2026 - React Beginners
@@ -25,10 +25,10 @@ export default function IdCard({
         </p>
       </div>
 
-      {/* Student Details */}
+      
       <div className="p-6 text-center">
 
-        {/* Avatar */}
+       
         <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100 text-2xl font-bold text-indigo-700">
           {initials}
         </div>
@@ -37,7 +37,7 @@ export default function IdCard({
           {student.name}
         </h3>
 
-        {/* Class Rep Condition */}
+        
         {student.id === "s1" && (
           <span className="mt-2 inline-block rounded-full bg-yellow-100 px-3 py-1 text-xs font-semibold text-yellow-800">
             Class Rep
