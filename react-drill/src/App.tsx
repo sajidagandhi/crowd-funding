@@ -1,74 +1,35 @@
 
-import IdCard from "./components/IdCard";
-import type { Student } from "./types";
-
-const students: Student[] = [
-  {
-    id: "s1",
-    name: "Harsh Patel",
-    rollNumber: "101",
-    validTill: 2026,
-  },
-  {
-    id: "s2",
-    name: "Priya Sharma",
-    rollNumber: "102",
-    validTill: 2026,
-  },
-  {
-    id: "s3",
-    name: "Rahul Mehta",
-    rollNumber: "103",
-    validTill: 2026,
-  },
-  {
-    id: "s4",
-    name: "Neha Shah",
-    rollNumber: "104",
-    validTill: 2027,
-  },
-  {
-    id: "s5",
-    name: "Aina Desai",
-    rollNumber: "105",
-    validTill: 2027,
-  },
-  {
-    id: "s6",
-    name: "Ananya Joshi",
-    rollNumber: "106",
-    validTill: 2027,
-  },
-];
+import LikeButton from "./components/LikeButton"
+import Counter from "./components/Counter"
+import NameSwapper from "./components/NameSwapper"
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-100 p-6">
+    <div className="min-h-screen space-y-8 bg-slate-900 p-10 text-white">
 
-      
-      <div className="mx-auto mb-8 max-w-6xl">
-        <h1 className="text-3xl font-bold text-slate-800">
-          Student ID Gallery
+      <div>
+        <h1 className="mb-3 text-2xl font-bold">
+          1. Like Button
         </h1>
-
-        <p className="mt-2 text-slate-500">
-          {students.length} students enrolled
-        </p>
+        <LikeButton />
       </div>
 
-      
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-        {students.map((student) => (
-          <IdCard
-            key={student.id}
-            student={student}
-          />
-        ))}
-
+      <div>
+        <h1 className="mb-3 text-2xl font-bold">
+          2. Counter
+        </h1>
+        <Counter />
       </div>
+
+      <div>
+        <h1 className="mb-3 text-2xl font-bold">
+          3. Name Swapper
+        </h1>
+        <NameSwapper />
+      </div>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
