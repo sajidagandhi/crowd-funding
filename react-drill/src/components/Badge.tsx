@@ -1,10 +1,10 @@
-   function Badge({ text }: { text: string }) {
-     return (
-       <span className="rounded-full bg-indigo-500 px-3 py-1 text-xs font-semibold text-white">
-         {text}
-       </span>
-     )
-   }
 
-   export default Badge
+function Badge({ label }: { label: string }) {
+  return (
+    <span className="rounded-full bg-indigo-500/20 px-3 py-1 text-sm text-indigo-300">
+      {label}
+    </span>
+  )
+}
 
+export default Badge
