@@ -1,6 +1,6 @@
 export type Student = {
-  id: string
-  name: string
-  role: string
-  skills: string[]
-}
+  id: string;
+  name: string;
+  rollNumber: string;
+  validTill: number;
+};
