@@ -1,4 +1,6 @@
    import type { Student } from "../types"
+   import Avatar from "./Avatar";
+import Badge from "./Badge";
 
    function ProfileCard({ student }: { student: Student }) {
      return (
@@ -11,9 +13,10 @@
            </div>
          </div>
          <div className="mt-3 flex flex-wrap gap-2">
-           {student.skills.map((skill) => (
-             <Badge key={skill} text={skill} />
-           ))}
+           {student.skills?.map((skill) => (
+           <Badge key={skill} label={skill} />
+          ))}
+           
          </div>
        </div>
      )

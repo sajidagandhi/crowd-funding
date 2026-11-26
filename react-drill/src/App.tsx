@@ -1,35 +1,42 @@
 
-import LikeButton from "./components/LikeButton"
-import Counter from "./components/Counter"
-import NameSwapper from "./components/NameSwapper"
+import EventDrill from "./components/EventDrill";
+import FAQCard from "./components/FAQCard";
 
 function App() {
   return (
-    <div className="min-h-screen space-y-8 bg-slate-900 p-10 text-white">
+    <div className="min-h-screen bg-slate-100 p-6">
 
-      <div>
-        <h1 className="mb-3 text-2xl font-bold">
-          1. Like Button
-        </h1>
-        <LikeButton />
-      </div>
+      <h1 className="mb-6 text-3xl font-bold text-slate-800">
+        React Event Practice
+      </h1>
 
-      <div>
-        <h1 className="mb-3 text-2xl font-bold">
-          2. Counter
-        </h1>
-        <Counter />
-      </div>
+      <EventDrill />
 
-      <div>
-        <h1 className="mb-3 text-2xl font-bold">
-          3. Name Swapper
-        </h1>
-        <NameSwapper />
+      <h2 className="mb-4 mt-8 text-2xl font-bold text-slate-800">
+        Frequently Asked Questions
+      </h2>
+
+      <div className="mx-auto max-w-2xl space-y-4">
+
+        <FAQCard
+          question="What is React?"
+          answer="React is a JavaScript library used to build user interfaces."
+        />
+
+        <FAQCard
+          question="What is useState?"
+          answer="useState is a React Hook that allows components to store and update state."
+        />
+
+        <FAQCard
+          question="What are React props?"
+          answer="Props are information passed from a parent component to a child component."
+        />
+
       </div>
 
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -12,7 +12,7 @@ function Card({ student }: { student: Student }) {
       </h2>
 
       <p className="mt-1 text-slate-400">
-        {student.role?}
+        {student.role}
       </p>
 
       <div className="mt-5 flex flex-wrap gap-2">
